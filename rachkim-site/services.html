@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Rachkim Cleaning Services</title>
+  <meta name="description" content="Rachkim Cleaning Services offers residential cleaning, commercial cleaning, carpet cleaning, pest control, pre and post occupational cleaning and more in Johannesburg." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="images/logo.jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .services-full { background: var(--white); }
+    .services-list { display: flex; flex-direction: column; gap: 5rem; margin-top: 3rem; }
+    .service-item { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .service-item.reverse { direction: rtl; }
+    .service-item.reverse > * { direction: ltr; }
+    .service-item__img img { width: 100%; height: 380px; object-fit: cover; border-radius: 2px; }
+    .service-item__num { font-family: var(--font-display); font-size: 4rem; font-weight: 400; color: var(--gold); opacity: 0.2; line-height: 1; margin-bottom: 0.5rem; }
+    .service-item h3 { font-family: var(--font-display); font-size: 2rem; font-weight: 400; color: var(--brown-deep); margin-bottom: 1rem; }
+    .service-item h3 em { font-style: italic; color: var(--brown-warm); }
+    .service-item p { font-size: 14.5px; line-height: 1.8; color: var(--text-light); margin-bottom: 1rem; }
+    .service-includes { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; }
+    .service-includes li { font-size: 13.5px; color: var(--text-mid); display: flex; align-items: center; gap: 10px; }
+    .service-includes li::before { content: ''; width: 20px; height: 1px; background: var(--gold); flex-shrink: 0; }
+    .pricing-note { background: var(--cream-dark); }
+    .pricing-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+    .pricing-inner p { font-size: 15px; color: var(--text-light); max-width: 600px; margin: 1rem auto 2rem; line-height: 1.8; }
+    @media (max-width: 960px) {
+      .service-item, .service-item.reverse { grid-template-columns: 1fr; direction: ltr; }
+      .service-item__img img { height: 260px; }
+    }
+  </style>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-brand"><img src="images/logo.jpg" alt="Rachkim Logo" /><div class="nav-logo">Rachkim Cleaning Services<span>Johannesburg, South Africa</span></div></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html" class="active">Services</a></li><li><a href="gallery.html">Our Work</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get a Quote</a>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Our Work</a><a href="contact.html">Contact</a><a href="contact.html">Get a Quote</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow anim-hero">What We Do</div>
+    <h1 class="anim-hero-1">Our <em>Services</em></h1>
+    <p class="anim-hero-2">From a weekly home clean to a full commercial contract — we have a service for every space and every need.</p>
+  </div>
+</div>
+
+<section class="services-full">
+  <div class="section-inner">
+    <div class="services-list">
+
+      <div class="service-item reveal">
+        <div class="service-item__img"><img src="images/living-room.jpg" alt="Residential cleaning" /></div>
+        <div>
+          <div class="service-item__num">01</div>
+          <h3>Residential <em>Cleaning</em></h3>
+          <p>Your home deserves more than a quick wipe-down. We clean with care, consistency, and attention to every corner — leaving your space genuinely spotless.</p>
+          <p>Available as a once-off clean, weekly, bi-weekly or monthly service — entirely on your schedule.</p>
+          <ul class="service-includes">
+            <li>Regular weekly and bi-weekly cleaning</li>
+            <li>Deep cleaning and spring cleans</li>
+            <li>Kitchen and bathroom sanitising</li>
+            <li>Dusting, vacuuming, mopping throughout</li>
+            <li>Bedroom and living area cleaning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item reverse reveal">
+        <div class="service-item__img"><img src="images/boardroom.jpg" alt="Commercial office cleaning" /></div>
+        <div>
+          <div class="service-item__num">02</div>
+          <h3>Commercial <em>Cleaning</em></h3>
+          <p>A clean workspace boosts productivity and leaves the right impression on clients and staff. We offer flexible commercial cleaning contracts for businesses of all sizes.</p>
+          <p>After-hours and weekend slots available so we never disrupt your operations.</p>
+          <ul class="service-includes">
+            <li>Office and boardroom cleaning</li>
+            <li>Retail and showroom cleaning</li>
+            <li>After-hours and weekend slots</li>
+            <li>Regular maintenance contracts</li>
+            <li>Kitchenette and bathroom sanitising</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item reveal">
+        <div class="service-item__img"><img src="images/hallway.jpg" alt="Pre and post occupational cleaning" /></div>
+        <div>
+          <div class="service-item__num">03</div>
+          <h3>Pre- &amp; Post-Occupational <em>Cleaning</em></h3>
+          <p>Moving in or out of a property? We ensure your new space is spotless before you settle in, or your old one is left in perfect condition after you leave.</p>
+          <ul class="service-includes">
+            <li>Full pre-move-in deep clean</li>
+            <li>Post-move-out cleaning for landlords and tenants</li>
+            <li>Cupboards, appliances and fixtures cleaned</li>
+            <li>Windows, tracks and sills</li>
+            <li>Available on short notice</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item reverse reveal">
+        <div class="service-item__img"><img src="images/couch-clean.jpg" alt="Carpet and couch cleaning" /></div>
+        <div>
+          <div class="service-item__num">04</div>
+          <h3>Carpet, Couch &amp; <em>Laundry</em></h3>
+          <p>Using specialist equipment we deep-clean carpets, rugs and upholstery — removing stains, odours and built-up dirt that regular vacuuming cannot reach.</p>
+          <ul class="service-includes">
+            <li>Carpet steam and dry cleaning</li>
+            <li>Couch and upholstery deep clean</li>
+            <li>Rug and curtain cleaning</li>
+            <li>Laundry and ironing services</li>
+            <li>Mattress cleaning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item reveal">
+        <div class="service-item__img"><img src="images/window-cleaning.jpg" alt="Window cleaning" /></div>
+        <div>
+          <div class="service-item__num">05</div>
+          <h3>Window &amp; <em>Pest Control</em></h3>
+          <p>Crystal-clear windows and a pest-free home — two services that make a huge difference to how your space looks and feels.</p>
+          <ul class="service-includes">
+            <li>Interior and exterior window cleaning</li>
+            <li>Window tracks and frames</li>
+            <li>Insect and rodent pest control</li>
+            <li>Safe, effective treatments</li>
+            <li>Preventative pest management</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item reverse reveal">
+        <div class="service-item__img"><img src="images/renovation.jpg" alt="Post renovation and event cleanup" /></div>
+        <div>
+          <div class="service-item__num">06</div>
+          <h3>Event &amp; Post-Renovation <em>Cleanup</em></h3>
+          <p>After a party, gathering, or construction project — we step in and restore your space to perfection, no matter the scale of the mess.</p>
+          <ul class="service-includes">
+            <li>Post-party and event cleanup</li>
+            <li>Post-renovation dust and debris removal</li>
+            <li>Large-scale commercial cleanup</li>
+            <li>Same-day and next-day availability</li>
+            <li>Full waste removal included</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="pricing-note">
+  <div class="pricing-inner section-inner">
+    <div class="section-eyebrow reveal" style="justify-content:center">Pricing</div>
+    <h2 class="section-title reveal" style="text-align:center">Every quote is <em>personalised.</em></h2>
+    <p class="reveal">We do not believe in one-size-fits-all pricing. Every space is different — so every quote is tailored to your specific needs, property size and location. Fill in our quick form and we will get back to you within 24 hours.</p>
+    <div class="reveal reveal-delay-1">
+      <a href="contact.html#quote" class="btn-primary">Request a Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Not sure which service you need? <em>Just ask.</em></h2>
+  <a href="contact.html" class="btn-dark">Contact Us</a>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div><div class="footer-brand"><img src="images/logo.jpg" alt="Rachkim logo" /><div class="footer-logo-text">Rachkim Cleaning Services<span>Johannesburg, South Africa</span></div></div><p class="footer-tagline">"Your Space, Spotless. Your Satisfaction, Guaranteed."</p></div>
+    <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Our Work</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Residential</a></li><li><a href="services.html">Commercial</a></li><li><a href="services.html">Carpet &amp; Couch</a></li><li><a href="services.html">Pest Control</a></li><li><a href="services.html">Event Cleanup</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><p>Johannesburg, South Africa<br/><br/>Mon – Sat: 07:00 – 18:00<br/>Sunday: By arrangement<br/><br/><a href="contact.html" style="color:var(--gold-light)">Send us a message</a></p></div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">© 2026 Rachkim Cleaning Services. All rights reserved.</div></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "rachkim-cleaning-services",
+  "version": "1.0.0",
+  "description": "Rachkim Cleaning Services website",
+  "dependencies": {
+    "nodemailer": "^6.9.9"
+  }
+}

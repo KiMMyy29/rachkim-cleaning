@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work | Rachkim Cleaning Services</title>
+  <meta name="description" content="See real photos from Rachkim Cleaning Services jobs across Johannesburg — residential homes, commercial offices, carpets, windows and more." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="images/logo.jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .gallery-section { background: var(--white); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 3rem; }
+    .gallery-item { position: relative; overflow: hidden; border-radius: 1px; cursor: pointer; }
+    .gallery-item img { width: 100%; height: 300px; object-fit: cover; filter: brightness(0.88); transition: filter 0.4s, transform 0.5s; display: block; }
+    .gallery-item:hover img { filter: brightness(1); transform: scale(1.04); }
+    .gallery-item__label { position: absolute; bottom: 0; left: 0; right: 0; padding: 1.2rem 1rem 1rem; background: linear-gradient(to top, rgba(44,26,14,0.85) 0%, transparent 100%); color: var(--cream); font-size: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; transform: translateY(100%); transition: transform 0.3s; }
+    .gallery-item:hover .gallery-item__label { transform: translateY(0); }
+    .gallery-item.featured img { height: 620px; }
+    /* Lightbox */
+    .lightbox { display: none; position: fixed; inset: 0; z-index: 500; background: rgba(20,10,4,0.95); align-items: center; justify-content: center; padding: 2rem; }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: 90vw; max-height: 88vh; object-fit: contain; border-radius: 2px; }
+    .lightbox-close { position: absolute; top: 1.5rem; right: 2rem; font-size: 2rem; color: var(--gold-light); cursor: pointer; background: none; border: none; line-height: 1; }
+    .lightbox-prev, .lightbox-next { position: absolute; top: 50%; transform: translateY(-50%); font-size: 2rem; color: var(--gold-light); cursor: pointer; background: none; border: none; padding: 1rem; }
+    .lightbox-prev { left: 1rem; }
+    .lightbox-next { right: 1rem; }
+    @media (max-width: 960px) {
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item.featured img { height: 300px; }
+    }
+    @media (max-width: 600px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-brand"><img src="images/logo.jpg" alt="Rachkim Logo" /><div class="nav-logo">Rachkim Cleaning Services<span>Johannesburg, South Africa</span></div></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html" class="active">Our Work</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get a Quote</a>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Our Work</a><a href="contact.html">Contact</a><a href="contact.html">Get a Quote</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow anim-hero">Real Jobs</div>
+    <h1 class="anim-hero-1">Our <em>Work</em></h1>
+    <p class="anim-hero-2">Real photos from real jobs across Johannesburg. This is what Rachkim delivers — every single time.</p>
+  </div>
+</div>
+
+<section class="gallery-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Photo Gallery</div>
+    <h2 class="section-title reveal">Spotless results <em>every time.</em></h2>
+    <p class="section-sub reveal">Click any photo to view it in full.</p>
+
+    <div class="gallery-grid" id="gallery-grid">
+      <div class="gallery-item featured reveal" onclick="openLightbox(0)">
+        <img src="images/floor-scrub.jpg" alt="Commercial floor deep clean" />
+        <div class="gallery-item__label">Commercial Floor Clean</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(1)">
+        <img src="images/living-room.jpg" alt="Spotless living room" />
+        <div class="gallery-item__label">Residential — Living Room</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(2)">
+        <img src="images/bedroom.jpg" alt="Clean bedroom" />
+        <div class="gallery-item__label">Residential — Bedroom</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(3)">
+        <img src="images/kitchen.jpg" alt="Clean kitchen" />
+        <div class="gallery-item__label">Residential — Kitchen</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(4)">
+        <img src="images/boardroom.jpg" alt="Spotless boardroom" />
+        <div class="gallery-item__label">Commercial — Boardroom</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-3" onclick="openLightbox(5)">
+        <img src="images/hero.jpg" alt="Team cleaning large space" />
+        <div class="gallery-item__label">Residential Floor Clean</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(6)">
+        <img src="images/window-cleaning.jpg" alt="Window cleaning" />
+        <div class="gallery-item__label">Window Cleaning</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(7)">
+        <img src="images/couch-clean.jpg" alt="Couch cleaning" />
+        <div class="gallery-item__label">Couch &amp; Upholstery Clean</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-3" onclick="openLightbox(8)">
+        <img src="images/carpet-clean.jpg" alt="Carpet cleaning" />
+        <div class="gallery-item__label">Carpet Cleaning</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(9)">
+        <img src="images/hallway.jpg" alt="Post occupational clean" />
+        <div class="gallery-item__label">Post-Occupational Clean</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(10)">
+        <img src="images/windows2.jpg" alt="Window cleaning team" />
+        <div class="gallery-item__label">Window Cleaning Team</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-3" onclick="openLightbox(11)">
+        <img src="images/renovation.jpg" alt="Post renovation cleanup" />
+        <div class="gallery-item__label">Post-Renovation Cleanup</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">&#x2715;</button>
+  <button class="lightbox-prev" onclick="changeLightbox(-1)">&#8592;</button>
+  <img src="" alt="" id="lightbox-img" />
+  <button class="lightbox-next" onclick="changeLightbox(1)">&#8594;</button>
+</div>
+
+<div class="cta-band">
+  <h2>Like what you see? <em>Let's talk.</em></h2>
+  <a href="contact.html" class="btn-dark">Get a Free Quote</a>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div><div class="footer-brand"><img src="images/logo.jpg" alt="Rachkim logo" /><div class="footer-logo-text">Rachkim Cleaning Services<span>Johannesburg, South Africa</span></div></div><p class="footer-tagline">"Your Space, Spotless. Your Satisfaction, Guaranteed."</p></div>
+    <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Our Work</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Residential</a></li><li><a href="services.html">Commercial</a></li><li><a href="services.html">Carpet &amp; Couch</a></li><li><a href="services.html">Pest Control</a></li><li><a href="services.html">Event Cleanup</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><p>Johannesburg, South Africa<br/><br/>Mon – Sat: 07:00 – 18:00<br/>Sunday: By arrangement<br/><br/><a href="contact.html" style="color:var(--gold-light)">Send us a message</a></p></div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">© 2026 Rachkim Cleaning Services. All rights reserved.</div></div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  const imgs = Array.from(document.querySelectorAll('#gallery-grid .gallery-item img')).map(i => i.src);
+  let current = 0;
+  function openLightbox(i) {
+    current = i;
+    document.getElementById('lightbox-img').src = imgs[i];
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function changeLightbox(dir) {
+    current = (current + dir + imgs.length) % imgs.length;
+    document.getElementById('lightbox-img').src = imgs[current];
+  }
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') changeLightbox(1);
+    if (e.key === 'ArrowLeft') changeLightbox(-1);
+  });
+</script>
+</body>
+</html>

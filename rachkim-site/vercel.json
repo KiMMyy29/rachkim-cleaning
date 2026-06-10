@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/send-contact", "destination": "/api/send-contact.js" },
+    { "source": "/api/send-quote", "destination": "/api/send-quote.js" }
+  ]
+}

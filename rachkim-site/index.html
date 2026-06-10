@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachkim Cleaning Services | Johannesburg</title>
+  <meta name="description" content="Rachkim Cleaning Services — professional residential and commercial cleaning in Johannesburg. Your Space, Spotless." />
+  <meta name="keywords" content="cleaning services Johannesburg, home cleaning, office cleaning, carpet cleaning, pest control Johannesburg" />
+  <meta property="og:title" content="Rachkim Cleaning Services | Johannesburg" />
+  <meta property="og:description" content="Professional cleaning company based in Johannesburg. Residential, commercial, carpet, laundry, pest control and event cleanup." />
+  <meta name="geo.region" content="ZA-GP" />
+  <meta name="geo.placename" content="Johannesburg" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="images/logo.jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Rachkim Cleaning Services","description":"Professional residential and commercial cleaning in Johannesburg.","telephone":"+27000000000","address":{"@type":"PostalAddress","addressLocality":"Johannesburg","addressRegion":"Gauteng","addressCountry":"ZA"},"openingHours":["Mo-Sa 07:00-18:00"],"priceRange":"R"}
+  </script>
+  <style>
+    .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; background: var(--brown-deep); padding-top: 74px; }
+    .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 5rem 4rem 5rem 5rem; }
+    .hero-right { position: relative; overflow: hidden; }
+    .hero-right img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.8); }
+    .hero-right::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, var(--brown-deep) 0%, transparent 45%); }
+    .hero-eyebrow { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 12px; }
+    .hero-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--gold); }
+    .hero h1 { font-family: var(--font-display); font-size: clamp(2.8rem, 5vw, 4.8rem); font-weight: 400; line-height: 1.1; color: var(--cream); margin-bottom: 0.75rem; }
+    .hero h1 em { font-style: italic; color: var(--gold-light); }
+    .hero-slogan { font-family: var(--font-display); font-style: italic; font-size: 1.2rem; color: rgba(250,246,239,0.55); margin-bottom: 1.5rem; }
+    .hero-desc { font-size: 15px; font-weight: 300; line-height: 1.8; color: rgba(250,246,239,0.65); max-width: 460px; margin-bottom: 2.5rem; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .hero-stats { display: flex; gap: 3rem; margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid rgba(201,168,76,0.18); }
+    .hero-stat__num { font-family: var(--font-display); font-size: 2rem; font-weight: 500; color: var(--gold-light); line-height: 1; }
+    .hero-stat__label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(250,246,239,0.4); margin-top: 5px; }
+    /* About strip */
+    .about-strip { background: var(--white); }
+    .about-strip-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .about-img { position: relative; }
+    .about-img img { width: 100%; height: 460px; object-fit: cover; border-radius: 2px; }
+    .about-badge { position: absolute; bottom: -1.5rem; right: -1.5rem; background: var(--gold); padding: 1.3rem 1.8rem; }
+    .about-badge__num { font-family: var(--font-display); font-size: 2rem; font-weight: 600; color: var(--brown-deep); line-height: 1; }
+    .about-badge__text { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brown-deep); opacity: 0.7; margin-top: 4px; }
+    .about-content .section-sub { margin-bottom: 1.5rem; }
+    /* Services preview */
+    .services-preview { background: var(--cream); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-top: 3rem; }
+    .service-card { background: var(--white); padding: 2.2rem; position: relative; overflow: hidden; transition: background 0.3s; }
+    .service-card::after { content: ''; position: absolute; bottom: 0; left: 0; height: 3px; width: 0; background: var(--gold); transition: width 0.4s; }
+    .service-card:hover { background: var(--cream); }
+    .service-card:hover::after { width: 100%; }
+    .service-card__num { font-family: var(--font-display); font-size: 2.8rem; color: var(--gold); opacity: 0.2; line-height: 1; margin-bottom: 0.8rem; }
+    .service-card h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 500; color: var(--brown-deep); margin-bottom: 0.6rem; }
+    .service-card p { font-size: 13.5px; line-height: 1.75; color: var(--text-light); }
+    /* Photo strip */
+    .photo-strip { display: grid; grid-template-columns: 1fr 1fr 1fr; height: 360px; gap: 3px; background: var(--brown-deep); }
+    .photo-strip img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.82); transition: filter 0.4s, transform 0.4s; }
+    .photo-strip img:hover { filter: brightness(0.98); transform: scale(1.02); }
+    /* Process */
+    .process { background: var(--cream-dark); }
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; position: relative; margin-top: 3rem; }
+    .process-steps::before { content: ''; position: absolute; top: 27px; left: 10%; right: 10%; height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); }
+    .process-step { text-align: center; padding: 0 1rem; }
+    .step-num { width: 54px; height: 54px; border-radius: 50%; border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-family: var(--font-display); color: var(--gold); background: var(--cream-dark); position: relative; z-index: 2; transition: background 0.3s, color 0.3s; }
+    .process-step:hover .step-num { background: var(--gold); color: var(--brown-deep); }
+    .process-step h4 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 500; color: var(--brown-deep); margin-bottom: 0.5rem; }
+    .process-step p { font-size: 13px; color: var(--text-light); line-height: 1.7; }
+    /* Testimonials */
+    .testimonials { background: var(--brown-deep); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .testimonial-card { padding: 2rem; border: 1px solid rgba(201,168,76,0.15); border-left: 3px solid var(--gold); transition: border-color 0.3s, transform 0.2s; }
+    .testimonial-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-4px); }
+    .testimonial-stars { color: var(--gold); font-size: 12px; letter-spacing: 3px; margin-bottom: 1rem; }
+    .testimonial-text { font-family: var(--font-display); font-style: italic; font-size: 1rem; line-height: 1.7; color: rgba(250,246,239,0.8); margin-bottom: 1.2rem; }
+    .testimonial-author { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-left { padding: 3rem 1.5rem; }
+      .hero-right { height: 280px; }
+      .about-strip-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .about-badge { right: 0; bottom: 0; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .photo-strip { grid-template-columns: 1fr; height: auto; }
+      .photo-strip img { height: 220px; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .process-steps::before { display: none; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-brand">
+    <img src="images/logo.jpg" alt="Rachkim Logo" />
+    <div class="nav-logo">Rachkim Cleaning Services<span>Johannesburg, South Africa</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Our Work</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get a Quote</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Our Work</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html">Get a Quote</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow anim-hero">Johannesburg's Trusted Cleaning Company</div>
+    <h1 class="anim-hero-1">Rachkim<br/>Cleaning<br/><em>Services</em></h1>
+    <p class="hero-slogan anim-hero-2">Your Space, Spotless. Your Satisfaction, Guaranteed.</p>
+    <p class="hero-desc anim-hero-2">We bring cleanliness straight to your doorstep. Professional residential and commercial cleaning tailored to your needs — with reliability and care at the heart of everything we do.</p>
+    <div class="hero-actions anim-hero-3">
+      <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+      <a href="services.html" class="btn-outline">Our Services</a>
+    </div>
+    <div class="hero-stats anim-hero-4">
+      <div class="hero-stat"><div class="hero-stat__num">200+</div><div class="hero-stat__label">Happy Clients</div></div>
+      <div class="hero-stat"><div class="hero-stat__num">5 Yrs</div><div class="hero-stat__label">In Business</div></div>
+      <div class="hero-stat"><div class="hero-stat__num">5 Star</div><div class="hero-stat__label">Rated Service</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="images/hero.jpg" alt="Rachkim team cleaning a spacious home" />
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-item">Fully Insured</div>
+  <div class="trust-item">Vetted Staff</div>
+  <div class="trust-item">Eco-Friendly Products Available</div>
+  <div class="trust-item">Satisfaction Guaranteed</div>
+  <div class="trust-item">Serving All of Johannesburg</div>
+</div>
+
+<!-- ABOUT STRIP -->
+<section class="about-strip">
+  <div class="about-strip-inner section-inner">
+    <div class="about-img reveal">
+      <img src="images/living-room.jpg" alt="Beautifully cleaned living room by Rachkim" />
+      <div class="about-badge">
+        <div class="about-badge__num">07:00</div>
+        <div class="about-badge__text">We start at 07:00 daily</div>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="section-eyebrow reveal">Who We Are</div>
+      <h2 class="section-title reveal">A cleaning company <em>you can trust.</em></h2>
+      <p class="section-sub reveal">Rachkim Cleaning Services is a professional cleaning company based in Johannesburg, South Africa. We offer residential and commercial cleaning, pre- and post-occupational cleaning, carpet cleaning, laundry, window cleaning, pest control and event cleanup.</p>
+      <p class="section-sub reveal reveal-delay-1" style="margin-top:1rem;">Known for our reliability and customer-first approach, we go the extra mile so every client is genuinely happy. Quality drives our success — your satisfaction is always our standard.</p>
+      <div style="margin-top:2rem;" class="reveal reveal-delay-2">
+        <a href="about.html" class="btn-primary">Learn More About Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="services-preview">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">What We Offer</div>
+    <h2 class="section-title reveal">Everything your space needs, <em>covered.</em></h2>
+    <p class="section-sub reveal">From routine home cleaning to full commercial contracts — tailored to your exact needs.</p>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1"><div class="service-card__num">01</div><h3>Residential Cleaning</h3><p>Regular home cleaning, deep cleans, and housekeeping tailored to your household.</p></div>
+      <div class="service-card reveal reveal-delay-2"><div class="service-card__num">02</div><h3>Commercial Cleaning</h3><p>Professional office and business cleaning. After-hours slots available.</p></div>
+      <div class="service-card reveal reveal-delay-3"><div class="service-card__num">03</div><h3>Pre- &amp; Post-Occupational</h3><p>Moving in or out? We ensure homes and offices are spotless before or after.</p></div>
+      <div class="service-card reveal reveal-delay-1"><div class="service-card__num">04</div><h3>Carpet &amp; Couch Cleaning</h3><p>Specialist equipment for carpets, upholstery and rugs. Deep treatment that restores.</p></div>
+      <div class="service-card reveal reveal-delay-2"><div class="service-card__num">05</div><h3>Pest Control</h3><p>Eliminating household pests — keeping your home safe and pest-free all year.</p></div>
+      <div class="service-card reveal reveal-delay-3"><div class="service-card__num">06</div><h3>Event &amp; Renovation Cleanup</h3><p>After parties or construction work — we restore your space to perfection.</p></div>
+    </div>
+    <div style="text-align:center; margin-top:2.5rem;" class="reveal">
+      <a href="services.html" class="btn-dark">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip">
+  <img src="images/bedroom.jpg" alt="Clean bedroom" />
+  <img src="images/boardroom.jpg" alt="Spotless boardroom" />
+  <img src="images/window-cleaning.jpg" alt="Window cleaning" />
+</div>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">How It Works</div>
+    <h2 class="section-title reveal">Simple. <em>Seamless.</em> Spotless.</h2>
+    <p class="section-sub reveal">Getting started with Rachkim is as easy as four steps.</p>
+    <div class="process-steps">
+      <div class="process-step reveal reveal-delay-1"><div class="step-num">01</div><h4>Request a Quote</h4><p>Fill in our quick form and receive a personalised quote within 24 hours.</p></div>
+      <div class="process-step reveal reveal-delay-2"><div class="step-num">02</div><h4>Choose a Date</h4><p>We work around your schedule — including weekends and after hours.</p></div>
+      <div class="process-step reveal reveal-delay-3"><div class="step-num">03</div><h4>We Do the Work</h4><p>Our vetted team arrives on time, fully equipped, and gets to work.</p></div>
+      <div class="process-step reveal reveal-delay-4"><div class="step-num">04</div><h4>Enjoy Your Space</h4><p>Sit back and enjoy a genuinely clean space. Guaranteed every time.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" style="color:var(--gold)">Client Reviews</div>
+    <h2 class="section-title light reveal">What our clients <em>say.</em></h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal reveal-delay-1"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Rachkim transformed my home. I came back from work to find everything spotless — even things I had not asked for. Absolutely blown away."</p><div class="testimonial-author">Thandi M. — Sandton</div></div>
+      <div class="testimonial-card reveal reveal-delay-2"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"We use them for our offices every week. Consistent, professional and always pleasant. I could not recommend them more highly."</p><div class="testimonial-author">David K. — Rosebank</div></div>
+      <div class="testimonial-card reveal reveal-delay-3"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"I have tried several cleaning companies in Joburg. Rachkim is in a completely different league. Thorough, reliable and worth every cent."</p><div class="testimonial-author">Nomsa P. — Fourways</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2>Ready for a <em>spotless</em> space?</h2>
+  <a href="contact.html" class="btn-dark">Book a Clean Today</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">
+        <img src="images/logo.jpg" alt="Rachkim logo" />
+        <div class="footer-logo-text">Rachkim Cleaning Services<span>Johannesburg, South Africa</span></div>
+      </div>
+      <p class="footer-tagline">"Your Space, Spotless. Your Satisfaction, Guaranteed."</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Our Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Residential</a></li>
+        <li><a href="services.html">Commercial</a></li>
+        <li><a href="services.html">Carpet &amp; Couch</a></li>
+        <li><a href="services.html">Pest Control</a></li>
+        <li><a href="services.html">Event Cleanup</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Johannesburg, South Africa<br/><br/>Mon – Sat: 07:00 – 18:00<br/>Sunday: By arrangement<br/><br/><a href="contact.html" style="color:var(--gold-light)">Send us a message</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Rachkim Cleaning Services. All rights reserved.</div>
+    <div class="footer-copy">Designed with care in Johannesburg.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

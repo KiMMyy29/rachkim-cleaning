@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Rachkim Cleaning Services</title>
+  <meta name="description" content="Learn about Rachkim Cleaning Services — a trusted professional cleaning company based in Johannesburg serving homes and businesses across the city." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="images/logo.jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .about-main { background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .about-img-wrap { position: relative; }
+    .about-img-wrap img { width: 100%; height: 500px; object-fit: cover; border-radius: 2px; }
+    .about-badge { position: absolute; bottom: -1.5rem; right: -1.5rem; background: var(--gold); padding: 1.5rem 2rem; }
+    .about-badge__num { font-family: var(--font-display); font-size: 2.2rem; font-weight: 600; color: var(--brown-deep); line-height: 1; }
+    .about-badge__text { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brown-deep); opacity: 0.7; margin-top: 4px; }
+    .about-hours { margin-top: 1.5rem; padding: 1.2rem 1.5rem; background: var(--cream-dark); border-left: 3px solid var(--gold); }
+    .about-hours p { font-size: 13.5px; color: var(--text-mid); line-height: 1.8; }
+    .about-hours strong { color: var(--brown-deep); }
+    .values { background: var(--brown-deep); }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .value-card { padding: 2rem; border: 1px solid rgba(201,168,76,0.15); border-top: 3px solid var(--gold); transition: border-color 0.3s, transform 0.2s; }
+    .value-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-4px); }
+    .value-card h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--gold-light); margin-bottom: 0.75rem; }
+    .value-card p { font-size: 13.5px; color: rgba(250,246,239,0.6); line-height: 1.75; }
+    .team { background: var(--cream); }
+    .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; margin-top: 3rem; }
+    .team-img img { width: 100%; height: 420px; object-fit: cover; border-radius: 2px; }
+    .team-text .section-sub { margin-bottom: 1.5rem; }
+    @media (max-width: 960px) {
+      .about-grid, .team-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .about-badge { right: 0; bottom: 0; }
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-brand">
+    <img src="images/logo.jpg" alt="Rachkim Logo" />
+    <div class="nav-logo">Rachkim Cleaning Services<span>Johannesburg, South Africa</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Our Work</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get a Quote</a>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Our Work</a><a href="contact.html">Contact</a><a href="contact.html">Get a Quote</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow anim-hero">Our Story</div>
+    <h1 class="anim-hero-1">About <em>Rachkim</em></h1>
+    <p class="anim-hero-2">A professional cleaning company built on trust, reliability, and a genuine passion for making spaces shine.</p>
+  </div>
+</div>
+
+<section class="about-main">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img src="images/living-room.jpg" alt="Beautifully clean space by Rachkim" />
+        <div class="about-badge">
+          <div class="about-badge__num">5+</div>
+          <div class="about-badge__text">Years in business</div>
+        </div>
+      </div>
+      <div>
+        <div class="section-eyebrow reveal">Who We Are</div>
+        <h2 class="section-title reveal">A cleaning company <em>based in Johannesburg.</em></h2>
+        <p class="section-sub reveal">Rachkim Cleaning Services is a professional cleaning company based in Johannesburg, South Africa. We were founded with a simple mission: to bring a genuinely high standard of cleanliness to homes and businesses across Johannesburg.</p>
+        <p class="section-sub reveal reveal-delay-1" style="margin-top:1rem;">We offer a wide range of services including residential and commercial cleaning, pre- and post-occupational cleaning, carpet and couch cleaning, laundry, window cleaning, pest control, and event or post-renovation cleanup.</p>
+        <p class="section-sub reveal reveal-delay-2" style="margin-top:1rem;">We are known for our reliability, our customer-first approach, and for going the extra mile to ensure every client is genuinely satisfied. Quality drives our success — and your satisfaction is always our standard.</p>
+        <div class="about-hours reveal reveal-delay-3">
+          <p><strong>Business Hours:</strong> Monday to Saturday 07:00 – 18:00 | Sunday by arrangement</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal" style="color:var(--gold)">What Drives Us</div>
+    <h2 class="section-title light reveal">Our values. <em>Our promise.</em></h2>
+    <div class="values-grid">
+      <div class="value-card reveal reveal-delay-1">
+        <h3>Reliability</h3>
+        <p>We show up when we say we will, every single time. No cancellations, no excuses — just the consistency your home or business deserves.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <h3>Quality</h3>
+        <p>We do not cut corners. Every space we clean receives the same high standard of attention — whether it is a single bedroom or an entire office block.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-3">
+        <h3>Trust</h3>
+        <p>Every team member is vetted and trained. We treat your home like our own, with the respect and care that every client deserves.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team">
+  <div class="section-inner">
+    <div class="team-grid">
+      <div class="team-img reveal">
+        <img src="images/floor-scrub.jpg" alt="Rachkim team hard at work" />
+      </div>
+      <div>
+        <div class="section-eyebrow reveal">Our Team</div>
+        <h2 class="section-title reveal">Dedicated people. <em>Exceptional results.</em></h2>
+        <p class="section-sub reveal">Behind every spotless space is a dedicated Rachkim team member who takes their work seriously. Our staff are trained, vetted, and passionate about delivering results that genuinely impress.</p>
+        <p class="section-sub reveal reveal-delay-1" style="margin-top:1rem;">We invest in our team because we know that the quality of our people is the quality of our service. When you invite Rachkim into your space, you are getting a team that cares.</p>
+        <div style="margin-top:2rem;" class="reveal reveal-delay-2">
+          <a href="contact.html" class="btn-primary">Work With Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Ready to experience the <em>Rachkim difference?</em></h2>
+  <a href="contact.html" class="btn-dark">Get a Free Quote</a>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand"><img src="images/logo.jpg" alt="Rachkim logo" /><div class="footer-logo-text">Rachkim Cleaning Services<span>Johannesburg, South Africa</span></div></div>
+      <p class="footer-tagline">"Your Space, Spotless. Your Satisfaction, Guaranteed."</p>
+    </div>
+    <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Our Work</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Residential</a></li><li><a href="services.html">Commercial</a></li><li><a href="services.html">Carpet &amp; Couch</a></li><li><a href="services.html">Pest Control</a></li><li><a href="services.html">Event Cleanup</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><p>Johannesburg, South Africa<br/><br/>Mon – Sat: 07:00 – 18:00<br/>Sunday: By arrangement<br/><br/><a href="contact.html" style="color:var(--gold-light)">Send us a message</a></p></div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">© 2026 Rachkim Cleaning Services. All rights reserved.</div></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
